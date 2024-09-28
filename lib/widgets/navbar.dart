@@ -75,7 +75,7 @@ class NavBar extends StatelessWidget {
                 ...navItem(context),
                 InkWell(
                     onTap: () {
-                      GoRouter.of(context).pushNamed(Routers.services.name);
+                      GoRouter.of(context).pushNamed(Routers.courses.name);
                     },
                     child: Container(
                       margin: const EdgeInsets.only(left: 20),

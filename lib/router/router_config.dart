@@ -5,6 +5,7 @@ import 'package:alphaweb/screens/homepage.dart';
 import 'package:alphaweb/screens/login_page.dart';
 import 'package:alphaweb/screens/new_password.dart';
 import 'package:alphaweb/screens/otp_verification.dart';
+import 'package:alphaweb/screens/pages/course.dart';
 import 'package:alphaweb/screens/password_changed.dart';
 import 'package:alphaweb/screens/services.dart';
 import 'package:alphaweb/screens/signup_page.dart';
@@ -73,6 +74,13 @@ final router = GoRouter(routes: [
     name: Routers.services.name,
     pageBuilder: (context, state) {
       return const CupertinoPage(child: ServicePage());
+    },
+  ),
+  GoRoute(
+    path: Routers.courses.path,
+    name: Routers.courses.name,
+    pageBuilder: (context, state) {
+      return CupertinoPage(child: CourseraStylePage());
     },
   )
 ]);

@@ -21,4 +21,5 @@ class Routers {
       AppRouter(name: "/passwordchanges", path: "/passwordchanges");
   static AppRouter homepage = AppRouter(name: "/homepage", path: "/homepage");
   static AppRouter services = AppRouter(name: "/services", path: "/services");
+  static AppRouter courses = AppRouter(name: "/courses", path: "/courses");
 }
